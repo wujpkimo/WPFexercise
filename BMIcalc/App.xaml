@@ -5,6 +5,6 @@
              xmlns:vm="clr-namespace:BMIcalc.ViewModel"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <vm:ViewModelLocator x:Key="viewModelLocator" />
+        <!--<vm:ViewModelLocator x:Key="viewModelLocator" />-->
     </Application.Resources>
 </Application>

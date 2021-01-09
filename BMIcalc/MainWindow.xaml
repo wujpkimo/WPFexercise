@@ -3,11 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:BMIcalc"
+        xmlns:local="clr-namespace:BMIcalc" xmlns:vm="clr-namespace:BMIcalc.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
-        DataContext ="{Binding Source={StaticResource viewModelLocator}, Path=BMIViewModel}">
-
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <vm:BMIViewModel />
+    </Window.DataContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
