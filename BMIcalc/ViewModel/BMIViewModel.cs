@@ -49,7 +49,7 @@ namespace BMIcalc.ViewModel
                 if (_calcCommand == null)
                 {
                     _calcCommand = new RelayCommand((x) => this.BMIvalue =
-                    Weight / ((Height / 100) * (Height / 100))
+                    Math.Round(Weight / ((Height / 100) * (Height / 100)), 2)
                     );
                 }
                 return _calcCommand;
