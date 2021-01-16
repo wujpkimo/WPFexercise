@@ -7,8 +7,8 @@ namespace BMIcalc.ViewModel
 {
     public class RelayCommand : ICommand
     {
-        private Action<object> _executeHandler;
-        private Func<object, bool> _canExecuteHandler;
+        private readonly Action<object> _executeHandler;
+        private readonly Func<object, bool> _canExecuteHandler;
 
         public event EventHandler CanExecuteChanged;
 

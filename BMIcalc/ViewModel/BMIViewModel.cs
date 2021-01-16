@@ -35,6 +35,7 @@ namespace BMIcalc.ViewModel
         {
             get { return _bMIvalue; }
             set
+
             {
                 SetProperty(ref _bMIvalue, value);
             }

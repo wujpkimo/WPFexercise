@@ -4,11 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BMIcalc" xmlns:vm="clr-namespace:BMIcalc.ViewModel"
+        xmlns:con="clr-namespace:BMIcalc.Converts"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.DataContext>
         <vm:BMIViewModel />
     </Window.DataContext>
+    <Window.Resources>
+        <con:NumberColorConvert x:Key="NumberColorConvert" />
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -30,6 +34,6 @@
         <Button Grid.Row="2" Grid.Column="1" Content="Calc BMI" Command="{Binding CalcCommand}" Width="100" Height="30" />
         <TextBlock Grid.Row="3" Grid.Column="0" Text="bmi：" HorizontalAlignment="Center" VerticalAlignment="Center" />
         <!--<TextBlock Grid.Row="3"  Grid.Column="1" x:Name="Result"  Width="100" Height="30" />-->
-        <TextBlock Grid.Row="3"  Grid.Column="1" Text="{Binding BMIvalue}"  Width="100" Height="30" />
+        <TextBlock Grid.Row="3"  Grid.Column="1" Text="{Binding BMIvalue}" Foreground="{Binding BMIvalue,Converter={StaticResource NumberColorConvert}}" Width="100" Height="30" />
     </Grid>
 </Window>
