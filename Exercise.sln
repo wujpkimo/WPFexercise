@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grid", "WpfApp1\Grid.csproj", "{86B670A9-286E-4B31-9F4C-B82A70DFD1FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMIcalc", "BMIcalc\BMIcalc.csproj", "{D77F1E87-6773-45CD-B952-D888B8569B28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BMIcalc", "BMIcalc\BMIcalc.csproj", "{D77F1E87-6773-45CD-B952-D888B8569B28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlTemp", "ControlTemp\ControlTemp.csproj", "{ADF7F204-A99E-409E-9FD9-AE5932AF583E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D77F1E87-6773-45CD-B952-D888B8569B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D77F1E87-6773-45CD-B952-D888B8569B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D77F1E87-6773-45CD-B952-D888B8569B28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF7F204-A99E-409E-9FD9-AE5932AF583E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF7F204-A99E-409E-9FD9-AE5932AF583E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF7F204-A99E-409E-9FD9-AE5932AF583E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF7F204-A99E-409E-9FD9-AE5932AF583E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
